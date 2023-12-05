@@ -57,23 +57,23 @@ public class MathUtils {
         return primeFactors;
     }
 
-//    /**
-//     * Посчитать наименьшее общее кратное двух чисел
-//     */
-//    public static int Calculate_LCM(int a, int b) throws IllegalArgumentException {
-//        if (a <= 0 || b <= 0) {
-//            throw new IllegalArgumentException("Both numbers must be positive integers");
-//        }
-//        int gcd = Calculate_GCD(a, b);
-//        return (a * b) / gcd;
-//    }
-//
-//    private static int Calculate_GCD(int a, int b) {
-//        if (b == 0) {
-//            return a;
-//        } else {
-//            return Calculate_GCD(b, a % b);
-//        }
-//    }
+    /**
+     * Посчитать наименьшее общее кратное двух чисел
+     */
+    public static int Calculate_LCM(int a, int b) throws IllegalArgumentException {
+        if (a <= 0 || b <= 0) {
+            throw new IllegalArgumentException("Both numbers must be positive integers");
+        }
+        int gcd = Calculate_GCD(a, b);
+        return (a * b) / gcd;
+    }
+
+    private static int Calculate_GCD(int a, int b) {
+        if (b == 0) {
+            return a;
+        } else {
+            return Calculate_GCD(b, a % b);
+        }
+    }
 
 }

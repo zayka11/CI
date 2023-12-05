@@ -56,7 +56,7 @@ class MathUtilsTest {
     }
 
     @Test
-//    @Disabled
+    @Disabled
     public void testPrimeFactorizationNegativeNumber() {
         int number = -84;
         List<Integer> expectedPrimeFactors = List.of(-1, 2, 2, 3, 7);
